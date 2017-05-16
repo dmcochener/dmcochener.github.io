@@ -18,14 +18,14 @@
 	<div class="container container-fluid">
 		
 		<!-- navigation bar -->
-		<nav class="navbar navbar-toggleable-md navbar-light" style="background-color: #deedee;">
+		<nav class="navbar navbar-toggleable-md navbar-light fixed-top" style="background-color: #deedee;">
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
 			<a class="navbar-brand" href="#">Deanna Cochener</a>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
 					<a class="nav-item nav-link" href="#skills">Skills</a>
 					<a class="nav-item nav-link" href="#education">Education</a>
 					<a class="nav-item nav-link" href="#community">Community</a>
@@ -36,7 +36,7 @@
 		<!-- navigation bar -->
 		
 		<!-- opening section -->
-		<div class=container container-fluid" id="#home">
+		<div class="container container-fluid top" id="home">
 			<!-- carousel slide show -->
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -74,7 +74,7 @@
 		<!-- end opening section -->
 		
 		<!-- skills section -->
-			<div class="container" id="#skills">
+			<div class="container" id="skills">
 				<!-- professional skills -->
 				<div class="container">
 				</div>
@@ -87,9 +87,9 @@
 		<!-- end skills section -->
 		
 		<!-- education section -->
-		<div class="container" id="#education">
+		<div class="container" id="education">
 			
-			<div class="flex-container">
+			<div class="flex-container rosie">
 				<div class="heading">
 					<h2>Education</h2>
 				</div>
@@ -152,12 +152,17 @@
 		<!-- end education section -->
 		
 		<!-- community involvement -->
-		<div class="container" id="#community">
+		<div class="container" id="community">
+			<div class="container container-fluid">
+				<div class="flex-container periwinkle">
+					<h4 class="display-5">Community Involvment and Interests</h4>
+				</div>
+			</div>
 			<div id="accordion" role="tablist" aria-multiselectable="true">
-				<div class="card">
+				<div class="card text-success">
 					<div class="card-header" role="tab" id="headingOne">
 						<h5 class="mb-0">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<a class="text-success" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 						  Collapsible Group Item #1
 						</a>
 						</h5>
@@ -169,10 +174,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="card">
+				<div class="card text-success">
 					<div class="card-header" role="tab" id="headingTwo">
 						<h5 class="mb-0">
-						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<a class="collapsed text-success" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 						  Collapsible Group Item #2
 						</a>
 						</h5>
@@ -183,10 +188,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="card">
+				<div class="card text-success">
 					<div class="card-header" role="tab" id="headingThree">
 						<h5 class="mb-0">
-						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<a class="collapsed text-success" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 						  Collapsible Group Item #3
 						</a>
 						</h5>
@@ -202,7 +207,7 @@
 		<!-- end community involvement -->
 		
 		<!-- social networking -->
-		<div class="container" id="#contact">
+		<div class="container" id="contact">
 		
 		</div>
 		<!-- end social networking -->
