@@ -1,3 +1,7 @@
+.top {
+	margin-top: 25px;
+}
+
 .photo {
 	max-width: 100%;
 	max-height: 650px;
@@ -32,9 +36,17 @@
 	flex-wrap: wrap;
 	padding: 10px;
 	margin: 0px;
-	background-color: #ffeeee;
 	justify-content: center;
 }
+
+.rosie {
+	background-color: #ffeeee;
+}
+
+.periwinkle {
+	background-color: #BCC5DB;
+}
+
 
 .school {
 	position: relative;
