@@ -111,12 +111,29 @@
 }
 
 /* =====================================
-	Cat Photos and Transitions
+	Cat Photos and Transitions (to be added)
 ======================================*/
+
+.cat-info, .cat-info-small{
+	text-align: center;
+	margin: 0px;
+	background-color: #fff;
+	color: #B98B8B;
+	padding: 3px;
+	height: 300px;
+}
+
+.cat-info{
+	width: 200px;
+}
+
+.cat-info-small{
+	width: 120px;
+}
 
 .cat-photo {
 	text-align: center;
-	margin: 50px;
+	margin: 0px;
 	width: 250px;
     height: 250px;
 }
