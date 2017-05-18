@@ -38,9 +38,13 @@
 	margin: 0px;
 	justify-content: center;
 }
-
-
-.ecru {
+.skill-container {
+	display: -webkit-flex;
+    display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	margin: 0px;
+	justify-content: center;
 	background-color: #E5F6E6;
 }
 
