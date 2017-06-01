@@ -309,26 +309,26 @@
 		<!-- end social networking -->
 		
 		<!-- cats -->
-		<div class="container">
+		<div class="container cats">
 			<div class="container container-fluid rosie">
-				<div class="heading">
-					<h4>Support Staff Interns</h4>
+				<div class="heading text-center">
+					<button type="button" class="btn btn-secondary popover-dismiss" data-container="body" data-toggle="popover" data-placement="bottom" data-content="I'd like to thank my support interns for their tireless work on projects. Their assistance is invaluable at keeping me entertained and relaxed. They are well paid in tuna and treats.">			
+						<h4>Support Staff Interns</h4>
+					</button>
 				</div>
+				<div class="hidden" id="Interns">
+					<div class="cat-info popover-body">
+					<p>			
 				<div class="flex-container">
-					<div class="cat-info">
-						Misty joined the team in 2011, after multiple unpleasant bosses. She is best at working on a problem off on her own before coming to convey her solution through cuddling. She is thankful for the health coverage of her job that saved her life from cancer. She is also a staunch Timbers fan. 
+					<div class="cat-photo">
+						<button type="button" class="btn btn-lg btn-secondary popover-dismiss" data-toggle="popover" data-trigger="focus" data-placement="left" title="Intern Misty" data-content="Misty joined the team in 2011, after multiple unpleasant bosses. She is best at working on a problem off on her own before coming to convey her solution through cuddling. She is thankful for the health coverage of her job that saved her life from cancer. She is also a staunch Timbers fan.">
+							<img class="rounded" src="./img/misty.jpg">
+						</button>
 					</div>
 					<div class="cat-photo">
-						<img class="rounded" src="./img/misty.jpg">
-					</div>
-					<div class="cat-info-small">
-						I'd like to thank my support interns for their tireless work on projects. Their assistance is invaluable at keeping me entertained and relaxed. They are well paid in tuna and treats.
-					</div>
-					<div class="cat-photo">
-						<img class="rounded" src="./img/marzipan.jpg">
-					</div>
-					<div class="cat-info">
-						Marzipan originally worked with another family company located in San Francisco, but due to layoffs, came to work with the company in 2014. She has struggled at times with fitting the corporate culture, but loves to be part of the action. When asked if she's happy with the transfer, she just purrs.
+						<button type="button" class="btn btn-lg btn-secondary popover-dismiss" data-toggle="popover" data-trigger="focus" data-placement="right" title="Intern Marzipan" data-content="Marzipan originally worked with another family company located in San Francisco, but due to layoffs, came to work with the company in 2014. She has struggled at times with fitting the corporate culture, but loves to be part of the action. When asked if she's happy with the transfer, she just purrs.">
+							<img class="rounded" src="./img/marzipan.jpg">
+						</button>
 					</div>
 				</div>
 			</div>
@@ -347,5 +347,22 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+	<script> $('.popover-dismiss').popover({
+		trigger: 'focus', html:true})
+	$(function(){
+    $('[data-toggle=popover]').popover({
+        html : true,
+        content: function() {
+          var content = $(this).attr("data-popover-content");
+          return $(content).children(".popover-body").html();
+        },
+        title: function() {
+          var title = $(this).attr("data-popover-content");
+          return $(title).children(".popover-heading").html();
+        }
+    });
+});
+	</script>
   </body>
 </html>
